@@ -87,35 +87,7 @@ function Header(props) {
 					</Grid>
 				</Toolbar>
 			</AppBar>
-			<AppBar
-				component="div"
-				className={classes.secondaryBar}
-				color="primary"
-				position="static"
-				elevation={0}>
-				<Toolbar>
-					<Grid container alignItems="center" spacing={1}>
-						<Grid item xs>
-							<Typography color="inherit" variant="h5" component="h1">
-								HC Service
-							</Typography>
-						</Grid>
-					</Grid>
-				</Toolbar>
-			</AppBar>
-			<AppBar
-				component="div"
-				className={classes.secondaryBar}
-				color="primary"
-				position="static"
-				elevation={0}>
-				<Tabs value={value} textColor="inherit" onChange={handleChange}>
-					<Tab textColor="inherit" label="Template" />
-					<Tab textColor="inherit" label="Server" />
-					<Tab textColor="inherit" label="Cluster" />
-					<Tab textColor="inherit" label="Scaleup" />
-				</Tabs>
-			</AppBar>
+
 		</React.Fragment>
 	);
 }

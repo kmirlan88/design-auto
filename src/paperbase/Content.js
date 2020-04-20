@@ -12,6 +12,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { withStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import RefreshIcon from '@material-ui/icons/Refresh';
+import Checkout from '../checkout/Checkout'
 
 const styles = (theme) => ({
   paper: {
@@ -40,34 +41,9 @@ function Content(props) {
   const { classes } = props;
 
   return (
-		<Paper className={classes.paper}>
-			<AppBar
-				className={classes.searchBar}
-				position="static"
-				color="default"
-				elevation={0}>
-				<Toolbar>
-					<Grid container spacing={2} alignItems="center">
-						<Grid item xs>
-							<TextField
-								fullWidth
-								placeholder="Search by email address, phone number, or user UID"
-								id="standard-basic"
-								label="Standard"
-								InputProps={{
-									disableUnderline: true,
-									className: classes.searchInput,
-								}}
-							/>
-						</Grid>
-						<Grid item></Grid>
-					</Grid>
-				</Toolbar>
-			</AppBar>
-			<Button variant="contained" color="primary" className={classes.addUser}>
-				Add user
-			</Button>
-		</Paper>
+
+			<Checkout />
+
 	);
 }
 
